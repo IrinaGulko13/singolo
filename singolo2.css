@@ -116,3 +116,81 @@ p.about {
 .pictures img {
     margin: 0 17px 17px 0;
 }
+
+.about-us {
+    width: 1020px;
+    height: 728px;
+    background-color: #f2f2f2;
+    margin: 0 auto;
+    border-bottom: 6px solid #ffffff;
+}
+
+
+.about-us h2 {
+    margin: 0;
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    padding-top: 62px;
+    padding-left: 40px;
+    letter-spacing: 0.6px;
+}
+
+.people {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 88px;
+}
+
+h5{
+    font-size: 18px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    margin-bottom: 0;
+    margin-top: 11px;
+}
+
+.description {
+    width: 300px;
+    height: 32px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.social {
+    display: flex;
+    justify-content: start;
+    margin-top: 33px;
+}
+
+.scolara {
+    margin-right: 40px;
+}
+
+.adam {
+    margin-left: 40px;
+}
+
+.social img {
+    margin-right: 8px;
+}
+
+.social img:hover {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
