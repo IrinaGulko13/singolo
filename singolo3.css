@@ -139,17 +139,35 @@ h3 {
     font-weight: 900;
     text-align: left;
     margin-bottom: 11px;
+    letter-spacing: 0.02em;
 }
 
-p {
+.contact p  {
     width: 300px;
-    height: 175px;
+    height: 91px;
+    font-size: 12px;
+    line-height: 21px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 0;
+    letter-spacing: 0.04em;
+}
+
+h4 {
+    width: 300px;
     font-size: 12px;
     line-height: 22px;
     color: #f0d8d9;
     font-family: "Lato";
     font-weight: 400;
     text-align: left;
+    margin: 0;
+}
+
+h4:first-child {
+    margin-left: 3px;
 }
 
 .contact {
@@ -157,11 +175,27 @@ p {
     margin-left: 21px;
 }
 
+.address {
+    margin-top: 16px;
+}
+
 .footer {
     width: 1020px;
     height: 76px;
     background-color: #2d303a;
     margin: 0 auto;
+}
+
+.location {
+    margin-right: 14px;
+}
+
+.phone {
+    margin-right: 12px;
+}
+
+.mail {
+    margin-right: 10px;
 }
 
 footer {
@@ -185,3 +219,4 @@ a {
 .links img {
     margin-right: 2px;
 }
+
