@@ -57,7 +57,7 @@ h2 {
     text-align: left;
     padding-top: 68px;
     padding-left: 40px;
-    letter-spacing: 0.6px;
+    letter-spacing: 0;
 }
 
 p.about {
@@ -155,4 +155,33 @@ p {
 .contact {
     margin-top: 18px;
     margin-left: 21px;
+}
+
+.footer {
+    width: 1020px;
+    height: 76px;
+    background-color: #2d303a;
+    margin: 0 auto;
+}
+
+footer {
+    display: flex;
+    justify-content: start;
+}
+
+a {
+    text-decoration: none;
+}
+
+.copyright {
+    margin: 33px 0 0 42px;
+}
+
+.links {
+    margin-left: 693px;
+    margin-top: 21px;
+}
+
+.links img {
+    margin-right: 2px;
 }
