@@ -13,24 +13,35 @@
         <div class="logo">
         <h1><a href = "#">singolo<span>*</span></a></h1>
         </div>
-        <nav class="menu">
-            <ul>
-                <li><a href = "#">home</a></li>
-                <li><a href = "#">services</a></li>
-                <li><a href = "#">portfolio</a></li>
-                <li><a href = "#">about</a></li>
-                <li><a href = "#">contact</a></li>
+        <nav class="menu" >
+            <ul id="menu">
+                <li><a href = "#" class="active">home</a></li>
+                <li><a href = "#services">services</a></li>
+                <li><a href = "#portfolio">portfolio</a></li>
+                <li><a href = "#about-us">about</a></li>
+                <li><a href = "#quote">contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="slider">
+        <section class="slider" id="gallery"><div class="buttons">
             <img src="assets/img/left.png" alt="" title="left" class="left">
-            <img src="assets/img/vertical.png" alt="" title="phone" class="vertical">
-            <img src="assets/img/horizontal.png" alt="" title="phone" class="horizontal">
             <img src="assets/img/right.png" alt="" title="right" class="right">
+        </div>
+            <div class="photos">
+                <div class=" slides slide-1">
+            <img src="assets/img/vertical.png" alt="" title="phone" class="vertical" id="vertical-phone">
+            <div id="vertical-black" class="hidden"></div>
+            <img src="assets/img/horizontal.png" alt="" title="phone" class="horizontal" id="horizontal-phone">
+            <div id="horizontal-black" class="hidden"></div>  
+        </div>
+        <div class="slides slide-2">
+            <img src="assets/img/slider.png">
+        </div>
+        </div>       
+        
         </section>
-        <section class="services">
+        <section class="services" id="services">
             <div class = "serv">
             <h2>Our Services</h2>
             <p class="about">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -80,17 +91,17 @@
             </div>
             </div>
         </section>
-        <section class="portfolio">
+        <section class="portfolio" id ="portfolio"> 
             <h2>Portfolio</h2>
             <p class="about">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-            <div class="tags">
-            <span class="tag">All</span>
+            <div class="tags" id="portfolio-tags">
+            <span class="tag active">All</span>
             <span class="tag">Web Design</span>
             <span class="tag graphic">Graphic Design</span>
             <span class="tag art">Artwork</span>
         </div>
-        <div class="pictures">
-            <img src="assets/img/portfolio1.png" alt="">
+        <div class="pictures" id="pic">
+            <img src="assets/img/portfolio1.png" alt="" class="active">
             <img src="assets/img/portfolio2.png" alt="">
             <img src="assets/img/portfolio3.png" alt="">
             <img src="assets/img/portfolio4.png" alt="">
@@ -104,7 +115,7 @@
             <img src="assets/img/portfolio12.png" alt="">
         </div>
         </section>   
-        <section class="about-us">
+        <section class="about-us" id="about-us">
             <h2>About Us</h2>
             <p class="about">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
             <div class="people">
@@ -143,16 +154,16 @@
                 </div>   
             </div>
         </section>
-        <section class="quote">
+        <section class="quote" id = "quote">
             <h2>Get a Quote</h2>
             <p class="about">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
             <div class="info">
                 <div class="form">
-                <form>
+                <form id="form-elem">
                 <input type="text" maxlength="25" size="40" placeholder="Name(Required)" required></input>
                 <input type="email" placeholder="Email(Required)" required></input>
-                <input type="text" placeholder="Subject"></input>
-                <textarea id="describe" placeholder="Describe your project in detail..."></textarea>
+                <input type="text" placeholder="Subject" class="input-subject"></input>
+                <textarea id="describe" placeholder="Describe your project in detail..." class="input-desc"></textarea>
                 <button type="submit">Submit</button>
             </form>
         </div>
@@ -167,7 +178,15 @@
             </div>
         </div>
         </section>
-    </main>
+    </main>  
+    <div class="message-block" hidden="true">
+        <div class="message">
+            <p>Письмо отправлено </p>
+            <p></p>
+            <p></p>
+            <button type="button" id="close-btn" class="submitbtn" value="submit" name="ok" >OK</<img>             
+        </div>
+    </div>
     <footer class="footer">
         <div class="copy">
             <p class="copyright">©Copyright2013</p>
@@ -180,5 +199,8 @@
         </div>
     </footer>
     </div>
+  
+
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
