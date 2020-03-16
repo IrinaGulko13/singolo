@@ -148,11 +148,11 @@
             <p class="about">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
             <div class="info">
                 <div class="form">
-                <form>
+                <form id="form-elem">
                 <input type="text" maxlength="25" size="40" placeholder="Name(Required)" required></input>
                 <input type="email" placeholder="Email(Required)" required></input>
-                <input type="text" placeholder="Subject"></input>
-                <textarea id="describe" placeholder="Describe your project in detail..."></textarea>
+                <input type="text" placeholder="Subject" class="input-subject"></input>
+                <textarea id="describe" placeholder="Describe your project in detail..." class="input-desc"></textarea>
                 <button type="submit">Submit</button>
             </form>
         </div>
@@ -167,7 +167,15 @@
             </div>
         </div>
         </section>
-    </main>
+    </main>  
+    <div class="message-block" hidden="true">
+        <div class="message">
+            <p>Письмо отправлено </p>
+            <p></p>
+            <p></p>
+            <button type="button" id="close-btn" class="submitbtn" value="submit" name="ok" >OK</button>             
+        </div>
+    </div>
     <footer class="footer">
         <div class="copy">
             <p class="copyright">©Copyright2013</p>
@@ -180,6 +188,8 @@
         </div>
     </footer>
     </div>
+  
+
     <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
