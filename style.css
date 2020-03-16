@@ -725,3 +725,17 @@ a {
 #horizontal-black.hidden {
     display: none;
 }
+
+.slides.slide-2 {
+    display: none;
+}
+
+.slide-2 {
+    position: absolute;
+    top: 0;
+}
+
+.buttons {
+    position: absolute;
+    z-index: 1;
+}
