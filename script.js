@@ -1,12 +1,13 @@
 const MENU = document.getElementById('menu');
-const PORTFOLIO = document.getElementById('portfolio');
+const PORTFOLIO = document.getElementById('portfolio-tags');
 const PICTURES = document.getElementById('pic');
 const CL_BTN = document.getElementById('close-btn');
 const FORM = document.getElementById('form-elem');
 const SUBJECT = document.querySelector('.input-subject');
 const DESC = document.querySelector('.input-desc');
 const MODAL = document.querySelector('.message-block');
-
+const VERTICAL = document.getElementById('vertical-phone');
+const HORIZONTAL = document.getElementById('horizontal-phone');
 
 
 MENU.addEventListener('click', (event) => {
@@ -16,12 +17,12 @@ MENU.addEventListener('click', (event) => {
 
 PORTFOLIO.addEventListener('click', (event) => {
     PORTFOLIO.querySelectorAll('span').forEach(el => el.classList.remove('active'))
-    event.target.classList.add('active')
+    event.target.classList.add('active');
 });
 
 PICTURES.addEventListener('click', (event) => {
-    PORTFOLIO.querySelectorAll('img').forEach(el => el.classList.remove('active'));
-    event.target.classList.add('active');
+    PICTURES.querySelectorAll('img').forEach(el => el.classList.remove('active'));
+    event.target.classList.add('active');  
 });
 
 FORM.addEventListener('submit', (event) => {
@@ -42,4 +43,19 @@ FORM.addEventListener('submit', (event) => {
 CL_BTN.addEventListener('click', function(event) {
     MODAL.hidden = true;
 });
+
+VERTICAL.addEventListener('click', () => {
+    if (!document.getElementById('vertical-black').classList.contains('hidden')) {
+      document.getElementById('vertical-black').classList.add('hidden')
+    } else 
+    document.getElementById('vertical-black').classList.remove('hidden')
+});
+
+HORIZONTAL.addEventListener('click', () => {
+    if (!document.getElementById('horizontal-black').classList.contains('hidden')) {
+      document.getElementById('horizontal-black').classList.add('hidden')
+    } else 
+    document.getElementById('horizontal-black').classList.remove('hidden')
+});
+
 
