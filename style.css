@@ -739,3 +739,12 @@ a {
     position: absolute;
     z-index: 1;
 }
+
+.header {
+    position: fixed;
+    left: 165px;
+}
+
+.slider {
+    top: 95px;
+}

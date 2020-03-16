@@ -8,6 +8,9 @@ const DESC = document.querySelector('.input-desc');
 const MODAL = document.querySelector('.message-block');
 const VERTICAL = document.getElementById('vertical-phone');
 const HORIZONTAL = document.getElementById('horizontal-phone');
+let BTN_PREV = document.querySelector('#gallery .buttons .left');
+let BTN_NEXT = document.querySelector('#gallery .buttons .right');
+let images = document.querySelectorAll('#gallery .photos .slides');
 
 
 MENU.addEventListener('click', (event) => {
@@ -18,6 +21,9 @@ MENU.addEventListener('click', (event) => {
 PORTFOLIO.addEventListener('click', (event) => {
     PORTFOLIO.querySelectorAll('span').forEach(el => el.classList.remove('active'))
     event.target.classList.add('active');
+    document.querySelector('.pictures').querySelectorAll('img').forEach(element => {        
+        element.style.order = Math.floor(Math.random() - 0.5);        
+   });
 });
 
 PICTURES.addEventListener('click', (event) => {
@@ -59,15 +65,13 @@ HORIZONTAL.addEventListener('click', () => {
 });
 
 
-let btn_prev = document.querySelector('#gallery .buttons .left');
-let btn_next = document.querySelector('#gallery .buttons .right');
-let images = document.querySelectorAll('#gallery .photos .slides');
+// slider
 let i = 0;
 i++;
 if(i >= images.length){
     i = 0; 
 }
-btn_prev.onclick = function(){
+BTN_PREV.onclick = function(){
     images[i].style.display = 'none';
     i = i - 1;
     if(i < 0){
@@ -75,7 +79,7 @@ btn_prev.onclick = function(){
     }
     images[i].style.display = 'block';
 }
-btn_next.onclick = function(){
+BTN_NEXT.onclick = function(){
     images[i].style.display = 'none';
     i = i - 1;
     if(i < 0){
