@@ -18,6 +18,7 @@ MENU.addEventListener('click', (event) => {
     event.target.classList.add('active')
 });
 
+
 PORTFOLIO.addEventListener('click', (event) => {
     PORTFOLIO.querySelectorAll('span').forEach(el => el.classList.remove('active'))
     event.target.classList.add('active');
@@ -48,6 +49,7 @@ FORM.addEventListener('submit', (event) => {
 
 CL_BTN.addEventListener('click', function(event) {
     MODAL.hidden = true;
+    document.getElementById('form-elem').reset();
 });
 
 VERTICAL.addEventListener('click', () => {
