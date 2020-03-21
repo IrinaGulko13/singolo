@@ -752,3 +752,7 @@ a {
 .serv {
     margin-top: 95px;
 }
+
+html {
+    scroll-behavior: smooth; 
+  }
