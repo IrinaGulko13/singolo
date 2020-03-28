@@ -545,18 +545,18 @@ form {
 }
 
  form button {
-    background:#f0d8d9;
+    background:#FBC65F;
     border: none;
     border-radius: 5px;
     width: 130px;
     height: 40px;
-    color: #767e9e;
-    font-size: 18px;
+    color: #886A30;
+    font-size: 14px;
     line-height: 22px;
     font-family: "Lato";
     font-weight: 400;
     text-align: justify;
-    padding-left: 35px;
+    padding-left: 45px;
     margin-top: 6px;
 }
 
@@ -740,19 +740,768 @@ a {
     z-index: 1;
 }
 
-.header {
+/* .header {
     position: fixed;
-    left: 165px;
-}
-
+    margin: 0 auto;
+} */
+/* 
 .slider {
     top: 95px;
 }
 
 .serv {
     margin-top: 95px;
-}
+} */
 
 html {
     scroll-behavior: smooth; 
+  }
+
+  @media (min-width: 768px) and (max-width: 1020px) {      
+    main {
+        overflow-x: hidden;
+    }
+
+    .wrapper {
+        width: 100%;
+        height:100%;
+    }
+
+    .header {
+        width: 100%;
+    }
+    
+    .menu {
+        width: 48%;
+        margin-right: 5%;
+    }
+            
+    .slider {
+        width: 100%;
+        height: 452px;
+        background-color: #f06c64;
+        border-bottom: 6px solid #ea676b;
+    }
+    
+    .left, .right {
+        position: absolute;
+    }
+    .left {
+        margin-top: 0;
+        margin-left: 0;
+        top: 211px;
+        left:29px;
+    }
+    
+    .right {
+        margin-top: 0;
+        margin-left:0;
+        top:211px;
+        left:725px;
+    }
+        
+    .vertical {
+        width:50%;
+        left: 11%;
+        top: 10%;
+        margin-top: 0;
+    }
+    
+    .horizontal {
+        width:50%;
+        left: 40%;
+        top: 20%;
+    }
+    
+    .services {
+        width: 100%;
+        height: 674px;
+    }
+    
+    .services h2 {
+        padding-top: 5%;
+        padding-left: 5%;
+    }
+    
+    .services p.about {
+        width: 89%;
+        margin-top: 3%;
+        margin-left: 5%;
+    }
+
+    .circles {
+        margin-top: 4%;
+    }
+      
+    .item {
+        width: 39%;
+        margin-top: 2%;
+    }
+    
+    .item:nth-child(4) {
+        margin-top: 5%;
+    }
+    
+    .item:nth-child(5) {
+        margin-top: 5%;
+    }
+    
+    .item:nth-child(6) {
+        margin-top: 5%;
+    }
+    
+    .item__text h4 {
+        width: 220px;
+    }
+       
+    
+    .item__text {
+        margin-left: 10%;
+    }
+    
+    .pen, .heart, .bulb {
+        margin-top: 11%;
+    }
+    
+    .phone, .bubble, .star{
+        margin-top: 6%;
+    }
+    
+    .pen, .phone{
+        margin-left:0;
+    }
+    
+    .pen.item__text, .phone.item__text {
+        margin-left: 27%;
+    }
+    
+    .bulb, .bubble {
+        margin-left: 0;
+    }
+    
+    .heart, .star {
+        margin-left: 0;
+    }
+    
+    .heart.item__text, .star.item__text {
+        margin-left: 27%;
+    }
+    
+    .bulb.item__text, .bubble.item__text {
+        margin-left: 27%;
+    }
+    
+    div.star.item__text, div.bubble.item__text, div.phone.item__text  {
+        margin-top: 0;
+    }
+    
+    .portfolio {
+        width: 100%;
+        height: 130%;
+    }
+    
+    .portfolio h2 {
+        padding-top: 8%;
+        padding-left: 5%;
+    }
+    
+    .portfolio p.about, .about-us p.about {
+        width: 90%;
+        margin-top: 2%;
+        margin-left: 5%;
+    }
+    
+    .tags {
+        margin-left: 5%;
+        margin-top: 2%;
+    }
+    
+    .pictures {
+        margin-top: 4%;
+        margin-left: 5%;
+    }
+    
+    .pictures img {
+        width: 29%;
+        height: 20%;
+        margin-right: 2.7%;
+        margin-bottom: 2.7%;
+    }
+    
+    
+    .about-us {
+        width: 100%;
+        height: 649px;
+    }
+    
+    .about-us h2 {
+        padding-top: 7%;
+        padding-left: 5%;
+    }
+    
+    .people {
+        flex-wrap: nowrap;
+        margin-top: 13%;
+    }
+    
+     .portrait{
+        width: 100%;
+        height: 60%;
+    } 
+    
+    h5{
+        margin-top: 4%;
+    }
+    
+    .description {
+        width: 219px;
+        margin-top: 2%;
+    }
+    
+    .social {
+        margin-top: 17%;
+    }
+    
+    .scolara {
+        margin-right: 0;
+        margin-left: 2%;
+        width: 219px;
+        height: 360px;
+    }
+    
+    .adam {
+        margin-left: 5%;
+        width: 219px;
+        height: 360px;
+    }
+    
+    .miles {
+        margin-left: 2%;
+        width: 219px;
+        height: 360px;
+    }
+       
+    .quote {
+        width: 100%;
+        height: 631px;
+    }
+    
+    h2 {
+        padding-top: 7%;
+        padding-left: 5%;
+    }
+    
+    p.about {
+        width: 87%;
+        margin-top: 2%;
+        margin-left: 5%;
+    }
+    
+    .info {
+        margin-top: 6.5%;
+    }
+    
+    input {
+        width: 100%;
+        margin-bottom: 2%;
+    }
+    
+    #describe {
+        width: 100%;
+        height: 159px;
+    }
+        
+    form {
+        margin-top: 6%;
+        margin-left: 6.5%;
+        width: 442px;
+    }
+    
+     form button {
+        width: 29%;
+        padding-left: 10%;
+        margin-top: 4%;
+    }
+    
+    .contact h3 {
+        margin-bottom: 4%;
+    }
+    
+    .contact p  {
+        width: 80%;
+    }
+    
+    h4 {
+        width: 73%;
+    }
+    
+    .address a {
+        width: 73%;
+    }
+    
+    h4:first-child {
+        margin-left: 1%;
+    }
+
+    .form {
+        margin-top:2.6%;
+    }
+    
+    .contact {
+        margin-top: 2.6%;
+        margin-left: 8%;
+    }
+    
+    .address {
+        margin-top: 17%;
+    }
+    
+    .footer {
+        width: 100%;
+    }
+    
+    .location {
+        margin-right: 7.6%;
+    }
+    
+    .phone-icon {
+        margin-right: 6.6%;
+    }
+    
+    .mail {
+        margin-right: 5.6%;
+    }
+    
+    footer {
+        display: flex;
+        justify-content: start;
+    }
+
+    
+    .copyright {
+        margin-top: 35%;
+        margin-left:50%;
+    }
+    
+    .links {
+        margin-left: 63%;
+        margin-top: 2.9%;
+    }
+    
+    .links img {
+        margin-right: 2px;
+    }
+    
+    .message-block {
+        width: 100%;
+        height: 3660px;
+    }
+    
+    .message { 
+        margin: 400% auto 0;
+    }
+    
+    #vertical-black { 
+        width: 126px;
+        height: 221px;
+        top: 134px;
+        left: 93px;
+    }
+    
+    #horizontal-black {
+        width: 221px;
+        height: 126px;
+        top: 168px;
+        left: 390px;
+    }
+    #gallery > div.photos > div.slides.slide-2 > img {
+            width: 100%;
+        }
+  }
+
+  @media (min-width: 375px) and (max-width: 767px) {
+    main {
+        overflow-x: hidden;
+    }
+
+    .wrapper {
+        width: 100%;
+        height:100%;
+    }
+
+    .header {
+        width: 100%;
+        height: 71px;
+    }
+    
+    .menu {
+        display: none;
+    }
+
+    h1 a {
+        font-size: 25px;
+        line-height: 6px;
+        color: #ffffff;
+        font-family: "Lato";
+        font-weight: 500;
+        letter-spacing: 0px;
+        text-transform: uppercase;
+        margin-left:0;
+        text-decoration: none;
+    }
+    
+    h1 {
+        margin-top: 16px;
+    }
+    
+    .logo {
+        margin-left: 36%;
+    }
+            
+    .slider {
+        width: 100%;
+        height: 220px;
+    }
+    
+    .left, .right {
+        position: absolute;
+    }
+    .left {
+        margin-top: 0;
+        margin-left: 0;
+        top: 98px;
+        left:10px;
+    }
+    
+    .right {
+        margin-top: 0;
+        margin-left:0;
+        top:98px;
+        left:351px;
+    }
+        
+    .vertical {
+        width:50%;
+        left: 11%;
+        top: 10%;
+        margin-top: 0;
+    }
+    
+    .horizontal {
+        width:50%;
+        left: 40%;
+        top: 20%;
+    }
+    
+    .services {
+        width: 100%;
+        height: 130%;
+    }
+    
+    .services h2 {
+        padding-top: 5%;
+        padding-left: 5%;
+    }
+    
+    .services p.about {
+        width: 89%;
+        margin-top: 7%;
+        margin-left: 5%;
+    }
+
+    .circles {
+        margin-top: 34%;
+    }
+      
+    .item {
+        width: 89%;
+        margin-top: 5%;
+    }
+    
+    .item:nth-child(4) {
+        margin-top: 5%;
+    }
+    
+    .item:nth-child(5) {
+        margin-top: 5%;
+    }
+    
+    .item:nth-child(6) {
+        margin-top: 5%;
+    }
+    
+    .item__text h4 {
+        width: 220px;
+    }
+       
+    
+    .item__text {
+        margin-left: 8%;
+    }
+    
+    .pen, .heart, .bulb {
+        margin-top: 6%;
+    }
+    
+    .phone, .bubble, .star{
+        margin-top: 6%;
+    }
+    
+    .pen, .phone{
+        margin-left:0;
+    }
+    
+    .pen.item__text, .phone.item__text {
+        margin-left: 27%;
+    }
+    
+    .bulb, .bubble {
+        margin-left: 0;
+    }
+    
+    .heart, .star {
+        margin-left: 0;
+    }
+    
+    .heart.item__text, .star.item__text {
+        margin-left: 27%;
+    }
+    
+    .bulb.item__text, .bubble.item__text {
+        margin-left: 27%;
+    }
+    
+    div.star.item__text, div.bubble.item__text, div.phone.item__text  {
+        margin-top: 5%;
+    }
+    
+    .portfolio {
+        width: 100%;
+        height: 130%;
+    }
+    
+    .portfolio h2 {
+        padding-top: 8%;
+        padding-left: 5%;
+    }
+    
+    .portfolio p.about, .about-us p.about {
+        width: 90%;
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+    
+    .tags {
+        margin-left: 5%;
+        margin-top: 23%;
+    }
+    
+    .pictures {
+        margin-top: 8%;
+        margin-left: 8%;
+    }
+    
+    .pictures img {
+        width: 43%;
+        height: 29%;
+        margin-right: 3.8%;
+        margin-bottom: 3.8%;
+    }
+    
+    
+    .about-us {
+        width: 100%;
+        height: 180%;
+    }
+    
+    .about-us h2 {
+        padding-top: 7%;
+        padding-left: 5%;
+    }
+    
+    .people {
+        flex-wrap: wrap;
+        margin-top: 13%;
+    }
+    
+     .portrait{
+        width: 100%;
+        height: 72%;
+    } 
+    
+    h5{
+        margin-top: 4%;
+    }
+    
+    .description {
+        width: 95%;
+        margin-top: 2%;
+    }
+    
+    .social {
+        margin-top: 7%;
+    }
+    
+    .scolara {
+        margin-right: 0;
+        margin-left: 7%;
+        margin-top: 15%;
+        width: 314px;
+        height: 440px;
+    }
+    
+    .adam {
+        margin-left: 8%;
+        margin-top: 40%;
+        width: 314px;
+        height: 440px;
+    }
+    
+    .miles {
+        margin-left: 7%;
+        margin-top: 15%;
+        width: 314px;
+        height: 440px;
+    }
+       
+    .quote {
+        width: 100%;
+        height: 130%;
+    }
+    
+    h2 {
+        padding-top: 7%;
+        padding-left: 5%;
+    }
+    
+    p.about {
+        width: 87%;
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+    
+    .info {
+        margin-top: 20%;
+        width: 84%;
+        flex-wrap: wrap;
+    }
+    
+    input {
+        width: 52%;
+        margin-bottom: 2%;
+    }
+    
+    #describe {
+        width: 52%;
+        height: 159px;
+    }
+        
+    form {
+        margin-top: 36%;
+        margin-left: 9.7%;  
+    }
+    
+     form button {
+        width: 52%;
+        padding-left: 23%;
+        margin-top: 4%;
+    }
+    
+    .contact h3 {
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+    
+    .contact p  {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    h4 {
+        width: 73%; 
+    }
+    
+    .address a {
+        width: 73%;
+    }
+    
+    h4:first-child {
+        margin-left: 1%;
+    }
+
+    .form {
+        margin-top:2.6%;
+        width: 100%;
+    }
+    
+    .contact {
+        margin-top: 10%;
+        margin-left: 9.7%;
+        width: 100%;
+    }
+    
+    .address {
+        margin-top: 2%;
+    }
+    
+    .footer {
+        width: 100%;
+    }
+    
+    .location {
+        margin-right: 7.6%;
+    }
+    
+    .phone-icon {
+        margin-right: 6.6%;
+    }
+    
+    .mail {
+        margin-right: 5.6%;
+    }
+    
+    footer {
+        display: flex;
+        justify-content: start;
+    }
+
+    
+    .copyright {
+        display:none;
+    }
+    
+    .links {
+        margin-left: 30%;
+        margin-top: 6%;
+    }
+    
+    .links img {
+        margin-right: 2px;
+    }
+    
+    .message-block {
+        width: 100%;
+        height: 5100px;
+    }
+    
+    .message { 
+        margin: 1150% auto 0;
+    }
+    
+    #vertical-black { 
+        width: 61px;
+        height: 109px;
+        top: 65px;
+        left: 46px;
+    }
+    
+    #horizontal-black {
+        width: 109px;
+        height: 62px;
+        top: 82px;
+        left: 190px;
+    }
+    #gallery > div.photos > div.slides.slide-2 > img {
+            width: 100%;
+        }
   }
