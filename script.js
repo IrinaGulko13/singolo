@@ -1,4 +1,5 @@
 const MENU = document.getElementById('menu');
+const HAMBURGER = document.querySelector('.menu-box');
 const PORTFOLIO = document.getElementById('portfolio-tags');
 const PICTURES = document.getElementById('pic');
 const CL_BTN = document.getElementById('close-btn');
@@ -15,6 +16,11 @@ let images = document.querySelectorAll('#gallery .photos .slides');
 
 MENU.addEventListener('click', (event) => {
     MENU.querySelectorAll('a').forEach(el => el.classList.remove('active'))
+    event.target.classList.add('active')
+});
+
+HAMBURGER.addEventListener('click', (event) => {
+    HAMBURGER.querySelectorAll('a').forEach(el => el.classList.remove('active'))
     event.target.classList.add('active')
 });
 
